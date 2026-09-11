@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="utf-8">
-  <title>EA 2 – login</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>EA 2 - login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="nav-link">HOME</a>
+        <h1 class="logo">GOURMET HUB</h1>
+        <a href="registro.html" class="btn-header">REGISTRARSE</a>
+    </header>
+
+    <main class="container">
+        <section class="card-form">
+            <h2>Inicio de sesion</h2>
+            
+            <form id="form-login" novalidate>
+                <div class="form-group">
+                    <label for="login-email">CORREO ELECTRONICO</label>
+                    <input type="email" id="login-email" name="login-email" maxlength="60" placeholder="usuario@duoc.cl">
+                    <span class="error-msg" id="error-login-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">CONTRASENA</label>
+                    <input type="password" id="login-password" name="login-password" placeholder="Tu contrasena">
+                    <span class="error-msg" id="error-login-password"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Iniciar sesion</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

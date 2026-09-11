@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>EA 2 – Gourmet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
 
@@ -13,130 +13,164 @@
 <body>
 
   <header class="index">
-      <div class="logo">
-          <h2>GourmetHub</h2>
-      </div>
-      <nav class="menu">
-          <a href="#inicio">Inicio</a>
-          <a href="#productos">Productos</a>
-          <a href="#servicios">Servicios</a>
-      </nav>
-      <nav class="login">
-        <a href="login.html">Login</a>
-        <a href="registro.html">registro</a>
-      </nav>
+    <div class="logo">
+      <h2>GourmetHub</h2>
+    </div>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#servicios">Servicios</a>
+    </nav>
+    <nav class="login">
+      <a href="login.html">Login</a>
+      <a href="registro.html">registro</a>
+    </nav>
+
+    <div class="carrito">
+      <a href="#carrito">
+        🛒 Carrito (<span id="cantidadCarrito">0</span>)
+      </a>
+    </div>
 
   </header>
+
 
   <section id="inicio" class="nosotros" alt="historia tienda">
     <h1 class="sobrenosotros">Sobre nosotros</h1>
     <p>Gourmet Hub vende insumos gastronómicos de alta gama y ofrece</p>
     <p>talleres de cocina en línea para amantes de la gastronomía</p>
-    <img src="https://www.somosmamas.com.ar/wp-content/uploads/2024/09/recetas-de-comidas-faciles-y-saludables.jpg" alt="imagen comida" class="imagen1">
+    <img src="https://www.somosmamas.com.ar/wp-content/uploads/2024/09/recetas-de-comidas-faciles-y-saludables.jpg"
+      alt="imagen comida" class="imagen1">
   </section>
 
 
-<section id="productos" class="titulo-producto">
+  <section id="productos" class="titulo-producto">
     <h2>Nuestros productos</h2>
     <p>Encuentra los mejores equipos e insumos para llevar tus preparaciones a otro nivel.</p>
-</section>
+  </section>
 
-<div class="productos-disponibles">
+  <div class="productos-disponibles">
 
-  <div class="productos">
-    <div class="producto-cuerpo">
-      <h2 class="producto-categoria">Parrilla eléctrica</h2>
-      <h3 class="producto-descripcion">
-        Compacta, potente, segura, fácil de limpiar, cocina uniforme siempre.
-      </h3>
-      <div class="producto-footer">
-        <span class="producto-precio">$120.000</span>
-        <button class="producto-button">Agregar</button>
+    <div class="productos">
+      <div class="producto-cuerpo">
+        <h2 class="producto-categoria">Parrilla eléctrica</h2>
+        <h3 class="producto-descripcion">
+          Compacta, potente, segura, fácil de limpiar, cocina uniforme siempre.
+        </h3>
+        <div class="producto-footer">
+          <span class="producto-precio">$120.000</span>
+          <button class="producto-button" data-producto="Parrilla eléctrica" data-precio="120000">
+            Agregar
+          </button>
+        </div>
       </div>
     </div>
+
+
+    <div class="productos">
+      <div class="producto-cuerpo">
+        <h2 class="producto-categoria">Air Fryer</h2>
+        <h3 class="producto-descripcion">
+          Rapida, saludable, compacta, eficiente, crujiente y segura.
+        </h3>
+        <div class="producto-footer">
+          <span class="producto-precio">$200.000</span>
+          <button class="producto-button" data-producto="Air Fryer" data-precio="200000">
+            Agregar
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="productos">
+      <div class="producto-cuerpo">
+        <h2 class="producto-categoria">Batidora</h2>
+        <h3 class="producto-descripcion">
+          Potente, ligera, ergonómica, duradera y fácil de limpiar.
+        </h3>
+        <div class="producto-footer">
+          <span class="producto-precio">$90.000</span>
+          <button class="producto-button" data-producto="Batidora" data-precio="90000">
+            Agregar
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
-  <div class="productos">
-    <div class="producto-cuerpo">
-      <h2 class="producto-categoria">Air Fryer</h2>
-      <h3 class="producto-descripcion">
-        Rapida, saludable, compacta, eficiente, crujiente y segura.
-      </h3>
-      <div class="producto-footer">
-        <span class="producto-precio">$200.000</span>
-        <button class="producto-button">Agregar</button>
-      </div>
-    </div>
-  </div>
 
-
-  <div class="productos">
-    <div class="producto-cuerpo">
-      <h2 class="producto-categoria">Batidora</h2>
-      <h3 class="producto-descripcion">
-        Potente, ligera, ergonómica, duradera y fácil de limpiar.
-      </h3>
-      <div class="producto-footer">
-        <span class="producto-precio">$90.000</span>
-        <button class="producto-button">Agregar</button>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
-<section id="servicios" class="talleres-titulo">
+  <section id="servicios" class="talleres-titulo">
     <h2>Talleres gastronómicos</h2>
     <p>Aprende nuevas técnicas y descubre el mundo de la cocina junto a nuestros especialistas.</p>
-</section>
+  </section>
 
 
-<div class="talleres-disponibles">
+  <div class="talleres-disponibles">
 
-  <div class="talleres">
-    <div class="taller-cuerpo">
-      <h2 class="taller-categoria">Taller de Pan Casero</h2>
-      <h3 class="taller-descripcion">
-        Aprende tecnicas básicas, masa madre y horneado artesanal delicioso.
-      </h3>
-      <div class="taller-footer">
-        <span class="taller-precio">$60.000 </span>
-        <button class="taller-button">Inscribirse</button>
+    <div class="talleres">
+      <div class="taller-cuerpo">
+        <h2 class="taller-categoria">Taller de Pan Casero</h2>
+        <h3 class="taller-descripcion">
+          Aprende tecnicas básicas, masa madre y horneado artesanal delicioso.
+        </h3>
+        <div class="taller-footer">
+          <span class="taller-precio">$60.000 </span>
+          <button class="taller-button">Inscribirse</button>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="talleres">
-    <div class="taller-cuerpo">
-      <h2 class="taller-categoria">Taller de Pastas Frescas</h2>
-      <h3 class="taller-descripcion">
-        Prepara ravioles, fettuccine y salsas italianas con ingredientes naturales.
-      </h3>
-      <div class="taller-footer">
-        <span class="taller-precio">$70.000</span>
-        <button class="taller-button">Inscribirse</button>
+    <div class="talleres">
+      <div class="taller-cuerpo">
+        <h2 class="taller-categoria">Taller de Pastas Frescas</h2>
+        <h3 class="taller-descripcion">
+          Prepara ravioles, fettuccine y salsas italianas con ingredientes naturales.
+        </h3>
+        <div class="taller-footer">
+          <span class="taller-precio">$70.000</span>
+          <button class="taller-button">Inscribirse</button>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="talleres">
-    <div class="taller-cuerpo">
-      <h2 class="taller-categoria">Taller de Reposteria</h2>
-      <h3 class="taller-descripcion">
-        Domina brownies, tartas y postres clásicos con técnicas profesionales.
-      </h3>
-      <div class="taller-footer">
-        <span class="taller-precio">$80.000</span>
-        <button class="taller-button">Inscribirse</button>
+    <div class="talleres">
+      <div class="taller-cuerpo">
+        <h2 class="taller-categoria">Taller de Reposteria</h2>
+        <h3 class="taller-descripcion">
+          Domina brownies, tartas y postres clásicos con técnicas profesionales.
+        </h3>
+        <div class="taller-footer">
+          <span class="taller-precio">$80.000</span>
+          <button class="taller-button">Inscribirse</button>
+        </div>
       </div>
     </div>
+
   </div>
 
-</div>  
+  <section id="carrito" class="carrito-seccion">
+
+    <h2>Carrito de compra</h2>
+
+    <div id="listaCarrito">
+      <p>El carrito está vacio</p>
+    </div>
+
+    <h3>
+      Total: $<span id="totalCarrito">0</span>
+    </h3>
+
+    <button id="vaciarCarrito">
+      Vaciar carrito
+    </button>
+
+  </section>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -5,165 +5,175 @@
   <meta charset="utf-8">
   <title>Gourmet hub - Registro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
-<body>
+<body class=" registro">
 
-  <header>
-    <h1>Gourmet Hub</h1>
 
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="login.html">Iniciar sesion</a>
-    </nav>
-  </header>
 
-  <main>
+  <div class="contenedor-registro">
 
-    <section class="registro">
+    <header class="headeregistro">
+      <h1 class="logoregistro">Gourmet Hub</h1>
 
-      <h2>Crear cuenta</h2>
-      <p>Registrese</p>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Iniciar sesion</a>
+      </nav>
+    </header>
 
-      <form id="formRegistro">
+    <main>
 
-        <div class="campo">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required>
-          <small id="errorNombre"></small>
-        </div>
+      <section class="registro">
 
-        <div class="campo">
-          <label for="correo">Correo Electronico</label>
-          <input type="email" id="correo" name="correo" required>
-          <small id="errorCorreo"></small>
-        </div>
+        <h2>Crear cuenta</h2>
+        <p>Registrese</p>
 
-        <div class="campo">
-          <label for="password">Contraseña</label>
-          <input type="password" id="password" name="password" required>
-          <small id="errorPassword"></small>
-        </div>
+        <form id="formRegistro">
 
-        <div class="campo">
-          <label for="confirmPassword">Confirme su contraseña</label>
-          <input type="password" id="confirmPassword" name="confirmPassword" required>
-          <small id="errorConfirmPassword"></small>
-        </div>
-
-        <fieldset>
-
-          <legend>Restricciones alimentarias</legend>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="celiaco">
-            Celiaco
-          </label>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="vegano">
-            Vegano
-          </label>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="vegetariano">
-            Vegetariano
-          </label>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="lactosa">
-            Intolerante a la Lactosa
-          </label>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="frutos-secos">
-            Frutos Secos
-          </label>
-
-          <label>
-            <input type="checkbox" name="restricciones" value="ninguna">
-            Ninguna
-          </label>
-
-          <small id="errorRestricciones"></small>
-
-        </fieldset>
-
-        <section id="recetasContainer">
-
-          <h3>Recetas de interes</h3>
-
-          <div class="receta">
-
-            <label for="categoria1">Categoria</label>
-
-            <select id="categoria1" name="categoria">
-
-              <option value="">
-                Selecciona una categoria
-              </option>
-
-              <option value="pasteleria">
-                Pasteleria
-              </option>
-
-              <option value="italiana">
-                Cocina Italiana
-              </option>
-
-              <option value="reposteria">
-                Reposteria
-              </option>
-
-              <option value="oriental">
-                Cocina Oriental
-              </option>
-
-              <option value="barismo">
-                Barismo
-              </option>
-
-            </select>
-
-            <p>Nivel de experiencia</p>
-
-            <label>
-              <input type="radio" name="nivel1" value="principiante">
-              Principiante
-            </label>
-
-            <label>
-              <input type="radio" name="nivel1" value="intermedio">
-              Intermedio
-            </label>
-
-            <label>
-              <input type="radio" name="nivel1" value="avanzado">
-              Avanzado
-            </label>
-            <small class="error-receta"></small>
-
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <small id="errorNombre"></small>
           </div>
 
-        </section>
+          <div class="campo">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo" name="correo" required>
+            <small id="errorCorreo"></small>
+          </div>
 
-        <button type="button" id="agregarReceta">
-          + Agregar otra receta
-        </button>
+          <div class="campo">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+            <small id="errorPassword"></small>
+          </div>
 
-        <button type="submit">
-          Registrarse
-        </button>
+          <div class="campo">
+            <label for="confirmPassword">Confirme su contraseña</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <small id="errorConfirmPassword"></small>
+          </div>
 
-      </form>
+          <fieldset>
 
-    </section>
+            <legend>Restricciones alimentarias</legend>
 
-  </main>
+            <label>
+              <input type="checkbox" name="restricciones" value="celiaco">
+              Celiaco
+            </label>
 
-  <script src="js/script.js"></script>
+            <label>
+              <input type="checkbox" name="restricciones" value="vegano">
+              Vegano
+            </label>
 
-</body>
+            <label>
+              <input type="checkbox" name="restricciones" value="vegetariano">
+              Vegetariano
+            </label>
+
+            <label>
+              <input type="checkbox" name="restricciones" value="lactosa">
+              Intolerante a la Lactosa
+            </label>
+
+            <label>
+              <input type="checkbox" name="restricciones" value="frutos-secos">
+              Frutos Secos
+            </label>
+
+            <label>
+              <input type="checkbox" name="restricciones" value="ninguna">
+              Ninguna
+            </label>
+
+            <small id="errorRestricciones"></small>
+
+          </fieldset>
+
+          <section id="recetasContainer">
+
+            <h3>Recetas de interes</h3>
+
+            <div class="receta">
+
+              <label for="categoria1">Categoria</label>
+
+              <select id="categoria1" name="categoria">
+
+                <option value="">
+                  Selecciona una categoria
+                </option>
+
+                <option value="pasteleria">
+                  Pasteleria
+                </option>
+
+                <option value="italiana">
+                  Cocina Italiana
+                </option>
+
+                <option value="reposteria">
+                  Reposteria
+                </option>
+
+                <option value="oriental">
+                  Cocina Oriental
+                </option>
+
+                <option value="barismo">
+                  Barismo
+                </option>
+
+              </select>
+
+              <p>Nivel de experiencia</p>
+
+              <label>
+                <input type="radio" name="nivel1" value="principiante">
+                Principiante
+              </label>
+
+              <label>
+                <input type="radio" name="nivel1" value="intermedio">
+                Intermedio
+              </label>
+
+              <label>
+                <input type="radio" name="nivel1" value="avanzado">
+                Avanzado
+              </label>
+              <small class="error-receta"></small>
+
+            </div>
+
+          </section>
+
+          <div class="botones-receta">
+            <button type="button" id="agregarReceta">
+              + Agregar otra receta
+            </button>
+
+            <button type="submit">
+              Registrarse
+            </button>
+          </div>
+
+
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+  </div>
+
+  </body>
 
 </html>

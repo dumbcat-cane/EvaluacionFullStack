@@ -2,7 +2,7 @@ let carrito = [];
 
 const usuario = {
     correo: "usuario@duoc.cl",
-    contrasena: "Hola1233#"
+    contrasena: "HOla1233#" 
 };
 
 
